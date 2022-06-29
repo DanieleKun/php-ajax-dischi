@@ -5,22 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     
     <div id="app">
-        <div class="card-container">
-            <div v-for="(item, i) in discs" :key="i" class="card">
-                <img :src="item.poster" :alt="item.title">
-                <div class="card-text">
-                  <h2>{{ item.title }}</h2>
-                  <h4>{{ item.author }}</h4>
-                  <h5>{{ item.year }}</h5>
-            
-                </div>
-              </div>
-        </div>
+        <header>
+            <img class="logo" src="assets/img/logo-spotify.png" alt="">
+        </header>
+
+        <main id="bg-container">
+            <div class="card-container">
+                <div v-for="(item, i) in discs" :key="i" class="card">
+                    <img :src="item.poster" :alt="item.title">
+                    <div class="card-text">
+
+                      <h2>{{ item.title }}</h2>
+                      <h4>{{ item.author }}</h4>
+                      <h5>{{ item.year }}</h5>
+                
+                    </div>
+                  </div>
+            </div>
+        </main>
+
     </div>
 
 

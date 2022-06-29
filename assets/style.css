@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Scrollbar */
+  *::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    *::-webkit-scrollbar-track {
+      background: #2E3A46;
+    }
+    
+    *::-webkit-scrollbar-thumb {
+      background-color: #1E2D3B;
+      border-radius: 20px;
+      border: 2px solid #2E3A46;
+    }
+  
+#app {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    height: 80px;
+    background-color: #2E3A46;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    margin-left: 20px;
+}
+
+#bg-container {
+    background-color: #1E2D3B;
+    text-align: center;
+    color: white;
+}
+
+select {
+    margin: 20px 10px;
+}
+
+.card-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #2E3A46;
+    width: calc(100% / 5 - 40px);
+    text-align: center;
+    color: white;
+    margin: 10px 20px;
+}
+
+img {
+    width: 80%;
+    height: 170px;
+    object-fit: contain;
+}
+
+.card-text {
+    padding-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+
+h4,
+h5 {
+    color: #808080;
+}
